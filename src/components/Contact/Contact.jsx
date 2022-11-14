@@ -6,13 +6,14 @@ const Contact = () => {
   const [contactSuccess, setContactSuccess] = useState("");
     const [contactError, setContactError] = useState("");
   const formRef = useRef()
+
   const sendEmail = (e) => {
     e.preventDefault()
     emailjs.sendForm(
-      'service_03y8mb5',
-      'contact_form',
+      process.env.REACT_APP_SERVICE_ID,
+      process.env.REACT_APP_TEMPLATE_ID,
       formRef.current,
-      'user_CjJF4sEAYn2qAhLPdQdMy'
+      process.env.REACT_APP_USER_ID
     )
     .then(
       (result) => {
