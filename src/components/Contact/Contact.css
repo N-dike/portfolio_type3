@@ -1,0 +1,91 @@
+.contact-container {
+    padding-bottom: 90px;
+}
+h1 {
+    color: #070A26;
+    font-family: 'Inter';
+    font-size: 53px;
+    text-align: center;
+    
+}
+h2 {
+    color: #070A26;
+    padding-left: 30px;
+    font-size: 30px;
+}
+.contact-form {
+    width: 50%;
+    margin-top: 20px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.half {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 2s 2s;
+    animation-fill-mode: forwards;
+    clear: both;
+}
+#form-split {
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+    clear: none;
+}
+#form-split:first-child {
+    margin-left: 0;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[type="text"],
+input[type="email"] {
+    background: #ce9d7d;
+    width: 100%;
+    border: 0;
+    height: 50px;
+    font-size: 16px;
+    color: #070A26;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    background: #ce9d7d;
+    height: 50px;
+    border: 0;
+    font-size: 16px;
+    color: #070A26;
+    padding: 20px;
+    min-height: 150px;
+    box-sizing: border-box;
+}
+.button {
+    color: #070A26;
+    background: 0 0;
+    font: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid #070A26;
+    float: right;
+    cursor: pointer;
+}
+.success-msg {
+    color: green;
+    font-size: 16px;
+}
+.error-msg {
+    color: red;
+    font-size: 16px;
+}
