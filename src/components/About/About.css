@@ -5,7 +5,7 @@
     display: flex;
 }
 h1 {
-    color: #070A26;
+    color: #330024;
     font-family: 'Inter';
     font-size: 53px;
     text-align: center;
@@ -34,7 +34,7 @@ h1::after {
 } */
 
 p {
-    color: #070A26;
+    color: #330024;
     line-height: 40px;
 }
 

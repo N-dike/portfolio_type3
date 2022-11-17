@@ -1,6 +1,7 @@
 import './Contact.css'
 import React, { useRef, useState } from 'react'
 import emailjs from 'emailjs-com'
+import { ShowComponent } from '../ShowComponent/ShowComponent'
 
 const Contact = () => {
   const [contactSuccess, setContactSuccess] = useState("");
@@ -34,7 +35,8 @@ const Contact = () => {
     formRef.current.reset()
   }
   return (
-    <div className="contact-container" id="/contacts">
+    <ShowComponent>
+      <div className="contact-container" id="/contacts">
         <h1>Contact Me</h1>
         <h2>Feel free to give me an email</h2>
         <div className="contact-form">
@@ -70,7 +72,8 @@ const Contact = () => {
             </form>
         </div>
         <div className="info-map"></div>
-    </div>
+      </div>
+    </ShowComponent>
   )
 }
 

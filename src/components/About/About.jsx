@@ -2,20 +2,21 @@ import './About.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import Letters from '../Animated/Letters/Letters'
+import { ShowComponent } from '../ShowComponent/ShowComponent'
 import { faCss3, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
 
 const About = () => {
   return (
-    <div className="about-container" id="/about">
-      <h1>
-        <Letters
-        strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-        idx={15}
-        />
-      </h1>
-      <div className="about-content">
-        <div className="text-zone">
+    <ShowComponent>
+      <div className="about-container" id="/about">
+        <h1>
+          <Letters
+          strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+          idx={15}
+          />
+        </h1>
+        <div className="about-content">
+          <div className="text-zone">
             <p>I am a self taught, passionate and enthusiastic about new technololgies 
               and coding beautiful and responsive web apps.
             </p>
@@ -26,7 +27,7 @@ const About = () => {
               responsiveness and readability) and efficient code and of course using
               the best coding practices.
             </p>
-        </div>
+          </div>
         <div className="the-cube">
           <div className="cube-spinner">
             <div className="face_1">
@@ -45,8 +46,9 @@ const About = () => {
             <div className="face_6"></div>
           </div>
         </div>
-        </div>
-    </div>
+      </div>
+      </div>
+    </ShowComponent>
   )
 }
 
