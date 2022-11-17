@@ -1,7 +1,6 @@
 import './About.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import Letters from '../Animated/Letters/Letters'
 import { ShowComponent } from '../ShowComponent/ShowComponent'
 import { faCss3, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 
@@ -10,10 +9,7 @@ const About = () => {
     <ShowComponent>
       <div className="about-container" id="/about">
         <h1>
-          <Letters
-          strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-          idx={15}
-          />
+          About me
         </h1>
         <div className="about-content">
           <div className="text-zone">

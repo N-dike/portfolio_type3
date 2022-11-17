@@ -71,13 +71,14 @@ textarea {
     box-sizing: border-box;
 }
 .button {
-    color: #070A26;
+    color: #330024;
     background: 0 0;
     font: 11px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
-    border: 1px solid #070A26;
+    border: 1px solid #7884F0;
+    border-radius: 10px;
     float: right;
     cursor: pointer;
 }

@@ -48,6 +48,8 @@ h1 {
     color: #330024;
     padding: 0px 15px 0px 10px;
     line-height: 24px;
+    font-family: 'Dosis';
+    font-weight: 700;
 }
 .read-more-less--more,
 .read-more-less--less {
@@ -75,26 +77,26 @@ h4 {
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 8px 0;
+    font-family: 'Nunito';
+    font-weight: 700;
+    text-transform: uppercase;
 }
 .link {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
-    padding: 0.2rem 1.5rem;
-    border: 1px;
-    border-style: solid;
+    padding: 3px 2px;
+    /* border: 1px;
+    border-style: solid; */
     color: #0F154D;
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    border-radius: 5px;
+    border-radius: 50px;
     transition: 0.5s;
     margin-bottom: 10px;
     text-decoration: none;
 }
 .link:hover {
     background-color: #7884F0;
-    color: var(--background);
     transition: all 0.3s ease-in-out;
 }
 .link:active {
