@@ -1,15 +1,14 @@
 .contact-container {
+    color: var(--textColor);
     padding-bottom: 90px;
 }
 h1 {
-    color: #330024;
     font-family: 'Inter';
     font-size: 53px;
     text-align: center;
     
 }
 h2 {
-    color: #330024;
     padding-left: 30px;
     font-size: 30px;
 }

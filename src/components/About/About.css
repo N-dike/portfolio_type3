@@ -1,11 +1,11 @@
 .about-container {
+    color: var(--textColour);
     padding-bottom: 90px;
 }
 .about-content {
     display: flex;
 }
 h1 {
-    color: #330024;
     font-family: 'Inter';
     font-size: 53px;
     text-align: center;
@@ -34,7 +34,6 @@ h1::after {
 } */
 
 p {
-    color: #330024;
     line-height: 40px;
 }
 

@@ -1,5 +1,5 @@
 .container {
-    background-color: #7884F0;
+    background-color: var(--navbarBackground);
     /* border: 1px solid #262A4D; */
     border-radius: 10px;
     box-shadow: 2px 2px rgba(22, 46, 3, 0.2);
@@ -34,9 +34,9 @@
 .navbar-link {
     background-image: linear-gradient(
         to right,
-        #fff4ed,
-        #fff4ed 50%,
-        #330024 50%);/*73B8E5 */
+        var(--background),
+        var(--background) 50%,
+        var(--textColour) 50%);/*73B8E5 */
     background-size: 200% 100%;
     background-position: -100%;
     font-size: 16px;
@@ -71,7 +71,7 @@
 
 /* HEADER */
 .header-container {
-    color: #330024;
+    color: var(--textColour);
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
@@ -140,7 +140,7 @@
         display: none;
     }
     .nav-checkbox {
-        background-color: #7884F0;
+        background-color: var(--navbarColour);
         position: fixed;
         height: 4000px;
         right: 0px;
@@ -154,7 +154,7 @@
         padding-top: 90px;
         padding-right: 50px;
         margin-left: 20px;
-        background-color: #7884F0;
+        background-color: var(--navbarColour);
         flex-direction: column;
         text-align: left;
         align-items:flex-start ;
