@@ -29,9 +29,6 @@ ul {
     overflow: hidden;
     display: block;
     position: relative;
-    opacity: 0;
-    animation: fadeInUp 2s 2s;
-    animation-fill-mode: forwards;
     clear: both;
 }
 #form-split {
@@ -72,13 +69,14 @@ textarea {
 }
 .button {
     color: #330024;
-    background: 0 0;
-    font: 11px;
-    letter-spacing: 3px;
+    font-weight: 700;
+    background-color: #7884F0;
+    font-family: 'Nunito';
+    font-size: 16px;
+    letter-spacing: 2px;
     text-decoration: none;
-    padding: 8px 10px;
+    padding: 5px 10px;
     border: 1px solid #7884F0;
-    border-radius: 10px;
     float: right;
     cursor: pointer;
 }
@@ -89,4 +87,21 @@ textarea {
 .error-msg {
     color: red;
     font-size: 16px;
+}
+@media only screen and (max-width: 960px) {
+    .contact-form {
+        width: 90%;
+        margin: auto;
+    }
+    h2 {
+        text-align: center;
+        padding: 0 50px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .button {
+        width: 100%;
+        padding: 10px 10px;
+        margin: auto;
+    }
 }

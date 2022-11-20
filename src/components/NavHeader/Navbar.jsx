@@ -1,12 +1,49 @@
 import './Header.css'
 import React from 'react'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
-
+  const [clicked, setClicked] = React.useState(false);
+  console.log(clicked);
 
   return (
-    <nav className = "container">
-
+    <nav className="container">
+    <div className= "navbar">
+    <ul className="navbar-nav" >
+        <Link duration={500} offset={-200} to="/" smooth={true} style={{textDecoration: "none"}}>
+            <li className="navbar-link">HOME</li>
+        </Link>
+        <Link duration={500} offset={-70} to="/about" smooth={true} style={{textDecoration: "none"}}>
+            <li className="navbar-link">ABOUT</li>
+        </Link>
+        <Link duration={500} offset={-70} to="/portfolio" smooth={true} style={{textDecoration: "none"}}>
+            <li className="navbar-link">PROJECTS</li>
+        </Link>
+        <Link duration={500} offset={-70} to="/contacts" smooth={true} style={{textDecoration: "none"}}>
+            <li className="navbar-link">CONTACT ME</li>
+        </Link>
+    </ul>
+    </div>
+    {/*  for mobile */}
+<div className="nav-checkbox" style = {{ width:  clicked ? "60%" : "0"}}>
+    <ul className="navbar-nav" >
+        <Link duration={500} offset={-200} to="/" smooth={true} style={{textDecoration: "none"}}>
+            <li className="navbar-link">HOME</li>
+        </Link>
+        <Link duration={500} offset={0} to="/about" smooth={true} style={{textDecoration: "none"}}>
+            <li className="navbar-link">ABOUT</li>
+        </Link>
+        <Link duration={500} offset={0} to="/portfolio" smooth={true} style={{textDecoration: "none"}}>
+            <li className="navbar-link">PROJECTS</li>
+        </Link>
+        <Link duration={500} offset={-70} to="/contacts" smooth={true} style={{textDecoration: "none"}}>
+            <li className="navbar-link">CONTACT ME</li>
+        </Link>
+    </ul>
+    </div>
+<div className="logo">
+      <img src="image/N.png" alt="" className="img" onClick={() => {setClicked((curr) => !curr)}} />
+</div>
     </nav>
   )
 }

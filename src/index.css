@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Inter&family=Nunito&family=Rubik&display=swap');
-@keyframes BG {
-  from {background-color: #f9f9f9;}
-  to {background-color: #f0C5A8;}
-}
+
 body {
   margin: 0;
   font-family:  'Dosis', 'Inter', 'Nunito', 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F0C5A8;
-  animation-name: BG;
-  animation-duration: 5s;
+  background-color: #fff4ed;
 }
 
 code {

@@ -1,9 +1,6 @@
 h1 {
     color: #330024;
 }
-.portF-continer {
-    padding: 90px;
-}
 .card-body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -13,10 +10,10 @@ h1 {
 }
 .card-main {
     border-radius: 10px;
-    box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+    box-shadow: 1px 5px 3px rgba(80, 78, 78, 0.5);
     width: 300px;
     text-align: center;
-    /* background: #ee2d2c; */
+    background: #F0C5A8;
 }
 .IMG-container {
     display: flex;
@@ -90,15 +87,23 @@ h4 {
     /* border: 1px;
     border-style: solid; */
     color: #0F154D;
-    border-radius: 50px;
     transition: 0.5s;
     margin-bottom: 10px;
     text-decoration: none;
 }
 .link:hover {
-    background-color: #7884F0;
-    transition: all 0.3s ease-in-out;
+    border-bottom: 3px solid #7884F0;
+    transition: all 0.2s ease-out;
 }
 .link:active {
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 960px) {
+    .portF-container {
+        margin-top: 150px;
+    }
+    .card-body {
+        place-items: unset;
+    }
 }

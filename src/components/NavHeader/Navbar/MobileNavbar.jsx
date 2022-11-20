@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-scroll'
+import './Navbar.css'
 
 const MobileNavbar = () => {
     const [clicked, setClicked] = useState(false);
@@ -11,9 +12,6 @@ const MobileNavbar = () => {
     }
     return (
         <div className="navbar">
-            <div className="logo">
-                <img src="image/N.png" alt="" className="img" onClick={() => {setClicked(!clicked)}} />
-            </div>
             <div className="sidebar">
                 <ul className="navbar-nav">
                     <Link duration={500} offset={-200} to="/" smooth={true} style={{textDecoration: "none"}}>

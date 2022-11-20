@@ -19,7 +19,7 @@ const About = () => {
 
             <p>I am a juniour developer with over 2 years of experience 
               building web apps, creating responsive websites with a fast beautiful UI 
-              all built with readable (These are what i consider my strengths 
+              all built with readable (These are what I consider my strengths 
               responsiveness and readability) and efficient code and of course using
               the best coding practices.
             </p>

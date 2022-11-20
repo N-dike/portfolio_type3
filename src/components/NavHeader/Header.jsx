@@ -14,11 +14,14 @@ const Header = () => {
           <div className="header">
             <h1 className="greetings">
               <Typed strings={['HELLO AND WELCOME, ', 'TO MY PERSONAL WEBSPACE.']} 
+              className="animate"
               typeSpeed={50} 
               backDelay={2000} 
               fadeOut={true} 
               onComplete={(self)=> self.cursor.remove()}
               />
+              <div className="fader-L"></div>
+              <div className="fader fader-R"></div>
             </h1>
               <span className={letterClass}>I</span> 
               <span className={`${letterClass} _12`}> 'm</span>

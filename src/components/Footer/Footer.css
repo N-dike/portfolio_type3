@@ -36,7 +36,7 @@
     transform: scale(1.1);
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 960px) {
     .socials-container {
         justify-content: center;
     }
@@ -44,7 +44,8 @@
 
 @media only screen and (max-width: 575px) {
     .footer-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        margin-bottom: 50px;
     }
     .footer-p {
         line-height: 22px;

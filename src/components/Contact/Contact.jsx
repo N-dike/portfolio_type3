@@ -38,7 +38,7 @@ const Contact = () => {
     <ShowComponent>
       <div className="contact-container" id="/contacts">
         <h1>Contact Me</h1>
-        <h2>Feel free to give me an email</h2>
+        <h2>Feel free to give me an email.</h2>
         <div className="contact-form">
             <form ref={formRef} onSubmit={sendEmail}>
             <ul>
