@@ -1,5 +1,5 @@
 .contact-container {
-    color: var(--textColor);
+    color: var(--textColour);
     padding-bottom: 90px;
 }
 h1 {
@@ -45,7 +45,7 @@ input:-webkit-autofill:focus {
 }
 input[type="text"],
 input[type="email"] {
-    background: #ce9d7d;
+    background: var(--backgroundAlternate);;
     width: 100%;
     border: 0;
     height: 50px;
@@ -57,7 +57,7 @@ input[type="email"] {
 
 textarea {
     width: 100%;
-    background: #ce9d7d;
+    background: var(--backgroundAlternate);;
     height: 50px;
     border: 0;
     font-size: 16px;
@@ -67,17 +67,24 @@ textarea {
     box-sizing: border-box;
 }
 .button {
-    color: #330024;
+    color: var(--textColour);
     font-weight: 700;
-    background-color: #7884F0;
+    background-color: var(--navbarBackground);
     font-family: 'Nunito';
     font-size: 16px;
     letter-spacing: 2px;
     text-decoration: none;
     padding: 5px 10px;
-    border: 1px solid #7884F0;
+    border: 1px solid var(--navbarBackground);
     float: right;
     cursor: pointer;
+    margin-bottom: 10px;
+}
+.button:hover,
+.button:focus {
+    box-shadow: -2px 1px 3px rgba(80, 78, 78, 0.5);
+    transition: all 0.4s ease-in-out;
+    translate: scale(1.1);
 }
 .success-msg {
     color: green;

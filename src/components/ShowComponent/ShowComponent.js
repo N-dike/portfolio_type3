@@ -15,7 +15,7 @@ export const ShowComponent = ({ children, threshold }) => {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 1}}
       variants={{
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 20 },

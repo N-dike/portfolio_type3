@@ -1,20 +1,45 @@
 @import 'animate.css';
 @import 'loaders.css/src/animations/semi-circle-spin.scss';
 .App {
-    margin: auto;
-    width: 90%;
     height: 100%;
     font-family: 'Rubik', serif;
+    background-color: var(--background);
 }
-.loader-active {
-    display: block;
-    position: absolute;
-    left:0;
-    right:0;
-    margin:auto;
-    top:0;
+.app-container {
+    width: 90%;
+    margin: auto;
+}
+.App.dark {
+    --background: #17100c;
+    --navbarBackground: #070A26;
+    --navbarAlternate: #CE9D7D;
+    --textColour: #FF99E2;
+    --textAlternate: #7884F0;
+    --backgroundAlternate: #592a08;
+}
+.App.light {
+    --background: #fff4ed;
+    --textColour: #330024;
+    --textAlternate: #0F154D;
+    --navbarBackground: #7884F0;
+    --backgroundAlternate: #ce9d7d;
+    --navbarAlternate: #592A08;
+}
+
+
+.change-mode {
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     width: 50px;
     height: 50px;
+    background-color: black;
+}
+.change-mode:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: all 1s ease-in-out;
 }
 
 
