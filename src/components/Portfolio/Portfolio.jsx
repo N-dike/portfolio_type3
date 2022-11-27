@@ -6,7 +6,7 @@ import './Portfolio.css'
 
 const Portfolio = () => {
     return (
-        // <ShowComponent>
+        <ShowComponent>
             <div className="portF-container" id="/portfolio">
                 <h1>My Projects</h1>
                 <div className="card-body">
@@ -46,7 +46,7 @@ const Portfolio = () => {
                     ))}
                 </div>
             </div>
-        // </ShowComponent>
+        </ShowComponent>
     )
 }
 

@@ -162,6 +162,7 @@
     .nav-checkbox {
         display: block;
         transition: width 0.4s ease-in-out;
+        background: var(--navbarBackground);
     }
     .navbar-link {
         margin-top: 30px;
@@ -210,7 +211,7 @@
         width: 25px;
             left: 0;
             background: linear-gradient(
-                to left, rgba(255, 255, 255, 0),rgba(255, 244, 237, 1)
+                to left, rgba(255, 255, 255, 0),var(--background)
             )
     }
     .fader-R {
@@ -221,7 +222,7 @@
         width: 25px;
             right: 0;
             background: linear-gradient(
-                to right, rgba(255, 255, 255, 0),rgba(255, 244, 237, 1)
+                to right, rgba(255, 255, 255, 0),var(--background)
             )
     }
     .text-animate {
