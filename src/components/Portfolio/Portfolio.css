@@ -106,6 +106,13 @@ h4 {
         margin-top: 150px;
     }
     .card-body {
-        place-items: unset;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .card-body {
+        display: flex;
+        overflow-x: hidden;
+        justify-content: center;
+        flex-direction: column;
     }
 }

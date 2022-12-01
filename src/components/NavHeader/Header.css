@@ -5,7 +5,6 @@
     box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: row;
-    height: 30px;
     margin: auto;
     position: sticky;
     top: 20px;
@@ -133,14 +132,12 @@
 
 @media only screen and (max-width: 960px) {
     .container {
-        box-shadow: none;
-        background-color: transparent;
+        height: auto;
     }
     .navbar {
         display: none;
     }
     .nav-checkbox {
-        background-color: var(--navbarColour);
         position: fixed;
         height: 4000px;
         right: 0px;
@@ -148,28 +145,35 @@
         text-align: left;
         overflow: hidden;
         width: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        transition: width 0.4s ease-in-out;
     }
     .navbar-nav {
-        margin-top: 50px;
+        margin: 50px 0px;
         padding-top: 90px;
         padding-right: 50px;
-        margin-left: 20px;
-        background-color: var(--navbarColour);
+        padding-left: 10px;
+        background-color: var(--navbarBackground);
         flex-direction: column;
         text-align: left;
         align-items:flex-start ;
-    }
-    .nav-checkbox {
+        width: 50%;
         display: block;
-        transition: width 0.4s ease-in-out;
-        background: var(--navbarBackground);
+    }
+    .nav-checkbox div {
+        width: 50%;
+        background: rgba(0, 0, 0, 0.2);
     }
     .navbar-link {
         margin-top: 30px;
+        white-space: nowrap;
+        overflow-x: hidden;
     }
     .logo {
         position: sticky;
         width: 100%;
+        margin-right: 10px;
     }
     .img {
         border: none;
